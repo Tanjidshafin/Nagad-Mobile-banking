@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagad signing in..</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex">
+    <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+            <div class="artboard artboard-demo phone-1">
+                <div>
+                    <img width="80" src="payoo.png" alt="">
+                </div>
+                <div class="divider">
+
+                </div>
+                <div class="bg-white rounded-2xl shadow-md">
+                    <form class="card-body">
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text font-semibold">Mobile Number</span>
+                            </label>
+                            <input id="login_number" type="text" placeholder="Enter your number"
+                                class="input input-bordered rounded-full" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text font-semibold">Pin</span>
+                            </label>
+                            <div class="relative flex items-center justify-end">
+                                <input id="login_password" type="password" placeholder="Enter pin"
+                                    class="input input-bordered rounded-full" required />
+                                <svg id="passwordShow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                    fill="currentColor" class="size-4 absolute right-2 cursor-pointer">
+                                    <path
+                                        d="M8 1a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 1ZM10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM12.95 4.11a.75.75 0 1 0-1.06-1.06l-1.062 1.06a.75.75 0 0 0 1.061 1.062l1.06-1.061ZM15 8a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 15 8ZM11.89 12.95a.75.75 0 0 0 1.06-1.06l-1.06-1.062a.75.75 0 0 0-1.062 1.061l1.061 1.06ZM8 12a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 12ZM5.172 11.89a.75.75 0 0 0-1.061-1.062L3.05 11.89a.75.75 0 1 0 1.06 1.06l1.06-1.06ZM4 8a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 4 8ZM4.11 5.172A.75.75 0 0 0 5.173 4.11L4.11 3.05a.75.75 0 1 0-1.06 1.06l1.06 1.06Z" />
+                                </svg>
+
+
+                            </div>
+
+                            <div class="form-control mt-6">
+                                <button id="login_btn" class="btn btn-primary rounded-full">Login</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+
+</html>
