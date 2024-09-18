@@ -1,17 +1,17 @@
 document.getElementById("logOut").addEventListener("click", function () {
-    window.location.href = "login.html"
+    window.location.href = "https://tanjidshafin.github.io/Nagad-Mobile-banking/login.html"
 })
 document.getElementById("TransferShower").addEventListener("click", function () {
 
-   document.getElementById("Add_btn").innerText="Transfer"
+    document.getElementById("Add_btn").innerText = "Transfer"
 
 
 })
-document.getElementById("addMoneyShower").addEventListener("click",function(){
-    document.getElementById("Add_btn").innerText="Add Money"
+document.getElementById("addMoneyShower").addEventListener("click", function () {
+    document.getElementById("Add_btn").innerText = "Add Money"
 })
-document.getElementById("cashOutShower").addEventListener("click",function(){
-    document.getElementById("Add_btn").innerText="Cash out"
+document.getElementById("cashOutShower").addEventListener("click", function () {
+    document.getElementById("Add_btn").innerText = "Cash out"
 })
 document.getElementById("Add_btn").addEventListener("click", function (event) {
     event.preventDefault()

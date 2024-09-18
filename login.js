@@ -11,7 +11,7 @@ document.getElementById("passwordShow").addEventListener("click", function () {
 document.getElementById("login_btn").addEventListener("click", function (event) {
     event.preventDefault()
     if (loginNumber.value == "01715257080" && loginPassword.value == "1234k") {
-        window.location.href = "main.html"
+        window.location.href = "https://tanjidshafin.github.io/Nagad-Mobile-banking/main.html"
     }
     else {
         alert("Wrong Number. Try again")
