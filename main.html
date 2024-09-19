@@ -20,7 +20,7 @@
                             <img class="w-5" src="payoo.png" alt="">
                         </div>
                         <div>
-                            <h1 id="availableBalance" class="text-sm font-bold">5000</h1>
+                            <h1 class="text-sm font-bold">$ <span id="availableBalance">0</span> </h1>
                             <p class="text-xs text-gray-500">Available Balance</p>
                         </div>
                     </div>
@@ -37,18 +37,19 @@
                             Log out</button>
                     </div>
                 </div>
-           
+
                 <div class="px-5 my-3">
                     <p class="text-lg font-bold">Welcome to Nagad BD!</p>
-                    <p class="text-sm text-gray-500">Easy and conbient Mobile banking system in bangladesh right now.</p>
+                    <p class="text-sm text-gray-500">Easy and conbient Mobile banking system in bangladesh right now.
+                    </p>
                     <div class="flex justify-between gap-2 mt-2">
                         <div><button id="addMoneyShower" class="btn">Add Money</button></div>
                         <div><button id="cashOutShower" class="btn">Cash out</button></div>
                         <div><button id="TransferShower" class="btn">Transfer money</button></div>
-                        
+
                     </div>
                 </div>
-                <div id="addMoneyInterface" class="bg-white rounded-2xl shadow-md">
+                <div id="addMoneyInterface" class="bg-white block rounded-2xl shadow-md">
                     <form class="card-body">
                         <div class="form-control">
                             <label class="label">
@@ -75,9 +76,12 @@
 
                             <div class="form-control mt-6">
                                 <button id="Add_btn" class="btn btn-primary rounded-full">Add Money</button>
+                                <button id="out_btn" hidden class="btn btn-primary rounded-full">Cash Out</button>
                             </div>
                     </form>
                 </div>
+                
+
             </div>
         </div>
     </div>

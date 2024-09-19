@@ -3,16 +3,15 @@ document.getElementById("logOut").addEventListener("click", function () {
 })
 document.getElementById("TransferShower").addEventListener("click", function () {
 
-    document.getElementById("Add_btn").innerText = "Transfer"
+    
 
 
 })
 document.getElementById("addMoneyShower").addEventListener("click", function () {
-    document.getElementById("Add_btn").innerText = "Add Money"
+     document.getElementById("out_btn").style.display="none"
+    document.getElementById("Add_btn").style.display="block"
 })
-document.getElementById("cashOutShower").addEventListener("click", function () {
-    document.getElementById("Add_btn").innerText = "Cash out"
-})
+
 document.getElementById("Add_btn").addEventListener("click", function (event) {
     event.preventDefault()
     if (document.getElementById("add_password").value == "1234k") {
@@ -22,6 +21,24 @@ document.getElementById("Add_btn").addEventListener("click", function (event) {
         let addMoney = parseFloat(addNumber.value)
         availableBalance.innerText = availBal + addMoney
         alert(addMoney + " " + "Tk added")
+    }
+    else {
+        alert("wrong pin")
+    }
+})
+document.getElementById("cashOutShower").addEventListener("click", function () {
+    document.getElementById("out_btn").style.display="block"
+    document.getElementById("Add_btn").style.display="none"
+})
+document.getElementById("out_btn").addEventListener("click", function (event) {
+    event.preventDefault()
+    if (document.getElementById("add_password").value == "1234k") {
+        let availableBalance = document.getElementById("availableBalance")
+        const addNumber = document.getElementById("add_number")
+        let availBal = parseFloat(availableBalance.innerText)
+        let addMoney = parseFloat(addNumber.value)
+        availableBalance.innerText = availBal - addMoney
+        alert(addMoney + " " + "Tk Cash Outed")
     }
     else {
         alert("wrong pin")
