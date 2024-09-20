@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -9,8 +9,78 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="flex justify-center">
+    <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+            <div class="artboard artboard-demo phone-2">
+                <div class="flex w-full justify-center items-center gap-14">
+                    <div class="flex items-center gap-2">
+                        <div>
+                            <img class="w-12" src="payoo.png" alt="">
+                        </div>
+                        <div>
+                            <p class="font-semibold"><span>0000</span>TK</p>
+                            <p class="bg-clip-text text-transparent bg-gradient-to-l from-blue-500 to-cyan-400">
+                                Available balance</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn rounded-lg border-gray-300 text-gray-500"><svg
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15" />
+                            </svg>
+                            Log Out</button>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="max-w-[22rem] mx-auto">
+                    <p class="font-bold text-xl">Welcome to Nagad Mobile Banking!</p>
+                    <p class="text-gray-500">Enjoy easy and convenient commercial services with us.</p>
+                </div>
+                <div class="flex mt-5 justify-between gap-5">
+                    <button class="btn">
+                        Add money
+                    </button>
+                    <button class="btn">
+                        Cash Out
+                    </button>
+                    <button class="btn">
+                        Transections
+                    </button>
 
+                </div>
+                <div>
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Email</span>
+                                </label>
+                                <input type="email" placeholder="email" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Password</span>
+                                </label>
+                                <input type="password" placeholder="password" class="input input-bordered" required />
+                                <label class="label">
+                                    <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                                </label>
+                            </div>
+                            <div class="form-control mt-6">
+                                <button class="btn btn-primary">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="utilities.js"></script>
 </body>
+
 
 </html>
