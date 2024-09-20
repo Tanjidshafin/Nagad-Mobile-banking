@@ -23,7 +23,8 @@ document.getElementById("addMoneyBtn").addEventListener("click", function (event
 })
 
 
-document.getElementById("passVisibler").addEventListener("click", function () {
+document.getElementById("passVisibler").addEventListener("click", function (event) {
+    event.preventDefault()
     if (pinId.type == "password" && document.getElementById("passVisibler").innerText == "Show") {
         pinId.type = "text"
         document.getElementById("passVisibler").innerText = "Hide!"
