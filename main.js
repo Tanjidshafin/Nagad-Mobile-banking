@@ -19,6 +19,8 @@ document.getElementById("addMoneyBtn").addEventListener("click", function (event
                             Available Balance ${document.getElementById("availableBalance").innerText}Tk</p> 
 `
         document.getElementById("historyShowerBox").appendChild(div)
+        document.getElementById("amount").value = ""
+        document.getElementById("pinId").value = ""
     }
 })
 
@@ -81,5 +83,7 @@ document.getElementById("cashOutBtn").addEventListener("click", function (e) {
                             Available Balance ${document.getElementById("availableBalance").innerText}Tk</p> 
 `
         document.getElementById("historyShowerBox").appendChild(div)
+        document.getElementById("amount").value = ""
+        document.getElementById("pinId").value = ""
     }
 })
