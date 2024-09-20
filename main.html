@@ -14,7 +14,7 @@
         <div class="camera"></div>
         <div class="display flex justify-center">
             <div class="artboard artboard-demo phone-2">
-                <div class="flex w-full justify-center items-center gap-7">
+                <div class="flex w-full justify-center items-center gap-3">
                     <div class="flex items-center gap-2">
                         <div>
                             <img class="w-12" src="payoo.png" alt="">
@@ -22,7 +22,7 @@
                         <div>
                             <p class="font-semibold"><span id="availableBalance">0000</span>TK</p>
                             <p
-                                class="bg-clip-text text-transparent bg-gradient-to-l font-semibold from-blue-500 to-cyan-400">
+                                class="bg-clip-text text-transparent text-sm bg-gradient-to-l font-semibold from-blue-500 to-cyan-400">
                                 Available balance</p>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
                     <p class="font-bold text-md">Welcome to Nagad Mobile Banking!</p>
                     <p class="text-gray-500">Enjoy easy and convenient commercial services with us.</p>
                 </div>
-                <div class="flex mt-5 justify-between gap-[0.2rem]">
+                <div class="flex mt-5 justify-between">
                     <button id="addMoneyInterface" class="btn bg-[#e2e8f0]">
                         Add money
                     </button>
@@ -61,7 +61,7 @@
                                 <label class="label">
                                     <span class="label-text">Amount</span>
                                 </label>
-                                <input id="amount" type="email" placeholder="email" class="input input-bordered"
+                                <input id="amount"  type="text" inputmode="numeric" placeholder="Enter amount" class="input input-bordered"
                                     required />
                             </div>
                             <div class="form-control">
@@ -69,7 +69,7 @@
                                     <span class="label-text">Pin</span>
                                 </label>
                                 <div>
-                                    <input id="pinId" type="password" placeholder="password"
+                                    <input id="pinId" type="password" placeholder="enter pin"
                                         class="input input-bordered" required />
                                     <button id="passVisibler" class="btn">Show</button>
                                 </div>

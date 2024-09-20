@@ -42,13 +42,16 @@ cashOutInterface.addEventListener("click", function () {
     document.getElementById("transectionPage").style.display = "none"
     cashOutInterface.style.backgroundColor = "#e2e8f0"
     addMoneyInterface.style.backgroundColor = "white"
+    transectionsInterface.style.backgroundColor = "white"
     document.getElementById("dealingBox").style.display = "block"
+
 })
 addMoneyInterface.addEventListener("click", function () {
     document.getElementById("addMoneyBtn").style.display = "block"
     document.getElementById("cashOutBtn").style.display = "none"
     cashOutInterface.style.backgroundColor = "white"
     addMoneyInterface.style.backgroundColor = "#e2e8f0"
+    transectionsInterface.style.backgroundColor = "white"
     document.getElementById("dealingBox").style.display = "block"
     document.getElementById("transectionPage").style.display = "none"
 })
