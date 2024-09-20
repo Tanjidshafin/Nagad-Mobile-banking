@@ -3,7 +3,8 @@ document.getElementById("logOut").addEventListener("click", function () {
     window.location.href = "https://tanjidshafin.github.io/Nagad-Mobile-banking/login.html"
 })
 
-document.getElementById("addMoneyBtn").addEventListener("click", function () {
+document.getElementById("addMoneyBtn").addEventListener("click", function (event) {
+    event.preventDefault()
     if (pinId.value != "1234k") {
         alert("Wrong Pin")
     }
@@ -64,7 +65,8 @@ transectionsInterface.addEventListener("click", function () {
 })
 
 
-document.getElementById("cashOutBtn").addEventListener("click", function () {
+document.getElementById("cashOutBtn").addEventListener("click", function (e) {
+    e.preventDefault()
     if (pinId.value != "1234k") {
         alert("Wrong Pin!")
     }
