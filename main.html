@@ -14,19 +14,20 @@
         <div class="camera"></div>
         <div class="display flex justify-center">
             <div class="artboard artboard-demo phone-2">
-                <div class="flex w-full justify-center items-center gap-14">
+                <div class="flex w-full justify-center items-center gap-7">
                     <div class="flex items-center gap-2">
                         <div>
                             <img class="w-12" src="payoo.png" alt="">
                         </div>
                         <div>
                             <p class="font-semibold"><span id="availableBalance">0000</span>TK</p>
-                            <p class="bg-clip-text text-transparent bg-gradient-to-l from-blue-500 to-cyan-400">
+                            <p
+                                class="bg-clip-text text-transparent bg-gradient-to-l font-semibold from-blue-500 to-cyan-400">
                                 Available balance</p>
                         </div>
                     </div>
                     <div>
-                        <button class="btn rounded-lg border-gray-300 text-gray-500"><svg
+                        <button id="logOut" class="btn rounded-lg border-gray-300 text-gray-500"><svg
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -37,11 +38,11 @@
                 </div>
                 <div class="divider"></div>
 
-                <div class="max-w-[20rem] mx-auto">
-                    <p class="font-bold text-lg">Welcome to Nagad Mobile Banking!</p>
+                <div class="max-w-[19rem] mx-auto">
+                    <p class="font-bold text-md">Welcome to Nagad Mobile Banking!</p>
                     <p class="text-gray-500">Enjoy easy and convenient commercial services with us.</p>
                 </div>
-                <div class="flex mt-5 justify-between gap-[0.3rem]">
+                <div class="flex mt-5 justify-between gap-[0.2rem]">
                     <button id="addMoneyInterface" class="btn bg-[#e2e8f0]">
                         Add money
                     </button>
@@ -53,7 +54,7 @@
                     </button>
 
                 </div>
-                <div class="mt-3">
+                <div id="dealingBox" class="mt-3">
                     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                             <div class="form-control">
@@ -82,11 +83,25 @@
                         </form>
                     </div>
                 </div>
+                <div id="transectionPage" class="flex mt-2 justify-center hidden">
+                    <p
+                        class="bg-clip-text flex justify-center text-transparent text-2xl font-bold bg-gradient-to-l from-blue-500 to-cyan-400">
+                        Transections History</p>
+
+
+                    <div id="historyShowerBox" class="h-[20rem] overflow-y-auto  w-full">
+                        <!-- <p class="bg-gradient-to-l text-white font-semibold p-3 mt-2 rounded-lg from-blue-500 to-cyan-300">
+                            Amount given 100 and
+                            Available Balance 100</p> -->
+
+                    </div>
+                </div>
+
+
             </div>
         </div>
-    </div>
-    <script src="main.js"></script>
-    <script src="utilities.js"></script>
+        <script src="main.js"></script>
+        <script src="utilities.js"></script>
 </body>
 
 
