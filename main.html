@@ -12,7 +12,7 @@
 <body class="flex justify-center">
     <div class="mockup-phone">
         <div class="camera"></div>
-        <div class="display">
+        <div class="display flex justify-center">
             <div class="artboard artboard-demo phone-2">
                 <div class="flex w-full justify-center items-center gap-14">
                     <div class="flex items-center gap-2">
@@ -20,7 +20,7 @@
                             <img class="w-12" src="payoo.png" alt="">
                         </div>
                         <div>
-                            <p class="font-semibold"><span>0000</span>TK</p>
+                            <p class="font-semibold"><span id="availableBalance">0000</span>TK</p>
                             <p class="bg-clip-text text-transparent bg-gradient-to-l from-blue-500 to-cyan-400">
                                 Available balance</p>
                         </div>
@@ -36,42 +36,48 @@
                     </div>
                 </div>
                 <div class="divider"></div>
-                <div class="max-w-[22rem] mx-auto">
-                    <p class="font-bold text-xl">Welcome to Nagad Mobile Banking!</p>
+
+                <div class="max-w-[20rem] mx-auto">
+                    <p class="font-bold text-lg">Welcome to Nagad Mobile Banking!</p>
                     <p class="text-gray-500">Enjoy easy and convenient commercial services with us.</p>
                 </div>
-                <div class="flex mt-5 justify-between gap-5">
-                    <button class="btn">
+                <div class="flex mt-5 justify-between gap-[0.3rem]">
+                    <button id="addMoneyInterface" class="btn bg-[#e2e8f0]">
                         Add money
                     </button>
-                    <button class="btn">
+                    <button id="cashOutInterface" class="btn bg-white">
                         Cash Out
                     </button>
-                    <button class="btn">
+                    <button id="transectionsInterface" class="btn bg-white">
                         Transections
                     </button>
 
                 </div>
-                <div>
+                <div class="mt-3">
                     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
-                                    <span class="label-text">Email</span>
+                                    <span class="label-text">Amount</span>
                                 </label>
-                                <input type="email" placeholder="email" class="input input-bordered" required />
+                                <input id="amount" type="email" placeholder="email" class="input input-bordered"
+                                    required />
                             </div>
                             <div class="form-control">
                                 <label class="label">
-                                    <span class="label-text">Password</span>
+                                    <span class="label-text">Pin</span>
                                 </label>
-                                <input type="password" placeholder="password" class="input input-bordered" required />
-                                <label class="label">
-                                    <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
-                                </label>
+                                <div>
+                                    <input id="pinId" type="password" placeholder="password"
+                                        class="input input-bordered" required />
+                                    <button id="passVisibler" class="btn">Show</button>
+                                </div>
+
+
                             </div>
                             <div class="form-control mt-6">
-                                <button class="btn btn-primary">Login</button>
+                                <button id="addMoneyBtn" class="btn btn-primary">Add Money</button>
+                                <button id="cashOutBtn" hidden class="btn btn-primary">Cash Out</button>
                             </div>
                         </form>
                     </div>
@@ -79,6 +85,7 @@
             </div>
         </div>
     </div>
+    <script src="main.js"></script>
     <script src="utilities.js"></script>
 </body>
 
